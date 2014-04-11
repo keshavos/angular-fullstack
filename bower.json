@@ -10,11 +10,21 @@
     "angular-resource": "1.2.11",
     "angular-cookies": "1.2.11",
     "angular-sanitize": "1.2.11",
-    "angular-route": "1.2.11"
+    "angular-route": "1.2.11",
+    "angular-fullstack-login": "git://github.com/keshavos/angular-fullstack-login.git#~1.0.2",
+    "jquery-ui" : "latest"
+  },
+  "install" : {
+    "path" : "app/scripts/",
+    "sources" : {
+      "angular-fullstack-login" : [
+        "bower_components/angular-fullstack-login/example-angular-fullstack-login.js"
+      ]
+    }
   },
   "devDependencies": {
     "angular-mocks": "1.2.11",
     "angular-scenario": "1.2.11"
   },
-  "testPath": "test/client/spec"  
+  "testPath": "test/client/spec"
 }
