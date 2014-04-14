@@ -11,14 +11,16 @@
     "angular-cookies": "1.2.11",
     "angular-sanitize": "1.2.11",
     "angular-route": "1.2.11",
-    "angular-fullstack-login": "git://github.com/keshavos/angular-fullstack-login.git#~1.0.2",
-    "jquery-ui" : "latest"
+    "angular-fullstack-login": "git://github.com/keshavos/angular-fullstack-login.git#latest", 
+    "angular-fullstack-register" : "git://git@github.com:keshavos/angular-fullstack-register.git#latest"
   },
   "install" : {
-    "path" : "app/scripts/",
+    "path" : "appdir/scripts/",
     "sources" : {
       "angular-fullstack-login" : [
-        "bower_components/angular-fullstack-login/example-angular-fullstack-login.js"
+        "bower_components/angular-fullstack-login/app/controllers/login.js",
+        "bower_components/angular-fullstack-login/app/services/session.js", 
+        "bower_components/angular-fullstack-login/app/services/auth.js"
       ]
     }
   },
