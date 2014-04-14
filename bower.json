@@ -12,7 +12,7 @@
     "angular-sanitize": "1.2.11",
     "angular-route": "1.2.11",
     "angular-fullstack-login": "git://github.com/keshavos/angular-fullstack-login.git#latest", 
-    "angular-fullstack-register" : "git://git@github.com:keshavos/angular-fullstack-register.git#latest"
+    "angular-fullstack-register" : "git://github.com/keshavos/angular-fullstack-register.git#latest"
   },
   "install" : {
     "path" : "appdir/scripts/",
