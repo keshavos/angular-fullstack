@@ -12,11 +12,6 @@ angular.module('angularFullstackApp', [
         templateUrl: 'partials/main',
         controller: 'MainCtrl'
       })
-      .when('/settings', {
-        templateUrl: 'partials/settings',
-        controller: 'SettingsCtrl',
-        authenticate: true
-      })
       .otherwise({
         redirectTo: '/'
       });
@@ -28,7 +23,7 @@ angular.module('angularFullstackApp', [
       return {
         'responseError': function(response) {
           if(response.status === 401) {
-            $location.path('/login');
+            $location.path('/');
             return $q.reject(response);
           }
           else {
@@ -38,13 +33,4 @@ angular.module('angularFullstackApp', [
       };
     }]);
   })
-  .run(function ($rootScope, $location, Auth) {
-
-    // Redirect to login if route requires auth and you're not logged in
-    $rootScope.$on('$routeChangeStart', function (event, next) {
-      
-      if (next.authenticate && !Auth.isLoggedIn()) {
-        $location.path('/login');
-      }
-    });
-  });
+  .run(function () {});
